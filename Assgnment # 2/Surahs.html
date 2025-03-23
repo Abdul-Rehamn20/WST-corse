@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Surahs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Surah Container */
+        .surah-container {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.1);
+            /* Transparent White */
+            padding: 25px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .surah-container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Surah List */
+        .surah-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .surah-list li {
+            margin: 5px;
+        }
+
+        /* Surah Links */
+        .surah-list li a {
+            display: block;
+            text-decoration: none;
+            background: linear-gradient(135deg, #2e2d2b, #817867);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #5e593e;
+        }
+
+        .surah-list li a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease-in-out;
+        }
+
+        .surah-list li a:hover::before {
+            left: 100%;
+        }
+
+        .surah-list li a:hover {
+            background: linear-gradient(135deg, #5e593e, #2e2d2b);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="logo1.jfif" alt="Quran Majeed Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Surahs.html">Surahs</a></li>
+                    <li><a href="translation.html">Translation</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="surah-container">
+
+        <h1>Quran Surahs</h1>
+
+        <ul class="surah-list">
+            <li><a href="surahs/al-fatiha.html">Al-Fatiha</a></li>
+            <li><a href="surahs/al-ikhlas.html">Al-Ikhlas</a></li>
+            <li><a href="surahs/al-falaq.html">Al-Falaq</a></li>
+            <li><a href="surahs/an-nas.html">An-Nas</a></li>
+        </ul>
+    </div>
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, feel free to reach out.</p>
+        <a href="mailto:info@quranmajeed.com">Send Email</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Quran Majeed. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
